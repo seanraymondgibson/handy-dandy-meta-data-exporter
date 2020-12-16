@@ -5,10 +5,10 @@ from PIL.ExifTags import TAGS
 
 mdf = pd.DataFrame()
 
-for filename in os.listdir('/file directory here/'):
+for filename in os.listdir('/>>file directory here<</'):
 
     if filename.endswith('.jpg') or ('jpeg') or ('.png'): 
-        filepath = '/file directory here/' + filename
+        filepath = '/>>file directory here<</' + filename
         print(filename + " exporting meta data...")
 
         image = Image.open(filepath)
